@@ -19,7 +19,7 @@ const CHAT = {
             self.msgArr.push({'msg':'进入了聊天室','username':name,'setclass':0});
         });
         this.socket.on('userNum',function(num){
-            console.log(num);
+            //console.log(num);
             self.onlineCount = num;
         });
         this.socket.on('message',function(obj){
